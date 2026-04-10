@@ -1,0 +1,39 @@
+===========================================================================
+ 🚀 BÁO CÁO KẾT QUẢ CHẠY BENCHMARK RAG TỰ ĐỘNG (LAB 7)
+ Sinh viên thực hiện : Nguyễn Hoàng Việt Hùng - 2A202600164 - Nhóm 08
+ Chiến lược Chunking : SentenceChunker (3 câu/chunk)
+ Vector Store Backend: bkai-foundation-models/vietnamese-bi-encoder
+===========================================================================
+
+[1/5] QUERY: Chí Phèo chửi ai?
+  ├─ Top-1 Score : 0.556
+  ├─ Top-1 Chunk : "Chí Phèo vừa chém túi bụi vừa kêu làng thật to. Hắn kêu làng, không bao giờ ngườ..."
+  ├─ Gold Answer : Chí Phèo chửi trời, chửi đời, chửi cả làng Vũ Đại
+  └─ Agent Ans   : Chí Phèo chửi đội Tảo, thằng lý Cường, và cả vợ hắn.
+---------------------------------------------------------------------------
+[2/5] QUERY: Thị Nở nấu gì cho Chí Phèo?
+  ├─ Top-1 Score : 0.504
+  ├─ Top-1 Chunk : "Hành thì nhà thị may lại còn Thị nấu bỏ vào cái rổ, mang ra cho Chí Phèo Thằng n..."
+  ├─ Gold Answer : Thị Nở nấu cháo hành
+  └─ Agent Ans   : Thị Nở nấu cháo hành cho Chí Phèo.
+---------------------------------------------------------------------------
+[3/5] QUERY: Chí Phèo ăn vạ ai?
+  ├─ Top-1 Score : 0.491
+  ├─ Top-1 Chunk : "Có chúng nó sinh chuyện thì mới có dịp mà ăn, nếu không thì giữa đám dân hiền là..."
+  ├─ Gold Answer : Ăn vạ đội Tảo và bá Kiến
+  └─ Agent Ans   : Chí Phèo ăn vạ đội Tảo.
+---------------------------------------------------------------------------
+[4/5] QUERY: Ai bắt cậu Vàng?
+  ├─ Top-1 Score : 0.398
+  ├─ Top-1 Chunk : "Nhưng lão vội nắm lấy nó, ôm đầu nó, đập nhè nhẹ vào lưng nó và dấu dí:  - À khô..."
+  ├─ Gold Answer : Lão Hạc bán cậu Vàng
+  └─ Agent Ans   : Thằng Mục và thằng Xiên đã bắt cậu Vàng.
+---------------------------------------------------------------------------
+[5/5] QUERY: Bi kịch của Hộ trong Đời Thừa là gì?
+  ├─ Top-1 Score : 0.413
+  ├─ Top-1 Chunk : "Nhưng Hộ chỉ sung sướng được ít lâu thôi. Sau cái hành vi đẹp của hắn, và cái hà..."
+  ├─ Gold Answer : Nhà văn mất lý tưởng vì gánh nặng cơm áo
+  └─ Agent Ans   : Bi kịch của Hộ trong "Đời Thừa" là sự mâu thuẫn giữa ước mơ sáng tạo nghệ thuật và trách nhiệm nuôi sống gia đình, dẫn đến cảm giác bất lực và khổ đau. Hắn phải đối mặt với nỗi cô đơn và sự bế tắc trong cuộc sống, không thể thoát khỏi gánh nặng của thực tại.
+---------------------------------------------------------------------------
+
+✅ HOÀN TẤT BENCHMARK! (Log được lưu tại: logs/benchmark_proof.txt)

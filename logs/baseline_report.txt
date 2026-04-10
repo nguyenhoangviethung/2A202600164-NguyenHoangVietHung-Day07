@@ -1,0 +1,13 @@
+=====================================================================================
+ 📊 BÁO CÁO BASELINE ANALYSIS: CHUNKING STRATEGIES
+ Tài liệu            : chi_pheo.txt (~55,253 ký tự)
+ Chunk Size          : 500
+=====================================================================================
+
+| Tài liệu     | Strategy        | Chunk Count  | Avg Length   | Preserves Context?        |
+|--------------|-----------------|--------------|--------------|---------------------------|
+| chi_pheo.txt | fixed_size      | 111          | 497.8        | Không — cắt ngang câu     |
+| chi_pheo.txt | by_sentences    | 301          | 182.0        | Tốt hơn — ngắt đúng câu   |
+| chi_pheo.txt | recursive       | 149          | 368.8        | Tốt nhất — ngắt theo đoạn |
+
+✅ Hoàn tất chạy Baseline! (Log được lưu tại: logs/baseline_report.txt)
