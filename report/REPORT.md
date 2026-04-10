@@ -208,13 +208,13 @@ Chạy 5 benchmark queries trên implementation với `SentenceChunker(3)` + `bk
 
 ### Kết Quả Của Tôi
 
-| # | Query | Top-1 Retrieved Chunk (preview) | Score | Agent Answer |
-|---|-------|---------------------------------|-------|--------------|
-| 1 | Chí Phèo chửi ai? | "Chí Phèo vừa chém túi bụi vừa kêu làng thật to..." | 0.556 | Chí Phèo chửi đội Tảo, thằng lý Cường, và cả vợ hắn. |
-| 2 | Thị Nở nấu gì... | "Hành thì nhà thị may lại còn Thị nấu bỏ vào cái rổ..." | 0.504 | Thị Nở nấu cháo hành cho Chí Phèo. |
-| 3 | Chí Phèo ăn vạ ai? | "Có chúng nó sinh chuyện thì mới có dịp mà ăn..." | 0.491 | Chí Phèo ăn vạ đội Tảo. |
-| 4 | Ai bắt cậu Vàng? | "Nhưng lão vội nắm lấy nó, ôm đầu nó, đập nhè nhẹ..." | 0.398 | Thằng Mục và thằng Xiên đã bắt cậu Vàng. |
-| 5 | Bi kịch của Hộ... | "Nhưng Hộ chỉ sung sướng được ít lâu thôi. Sau cái..." | 0.413 | Bi kịch của Hộ là sự mâu thuẫn giữa ước mơ sáng tạo nghệ thuật và trách nhiệm nuôi gia đình, dẫn đến bất lực và khổ đau. |
+| # | Query | Top-1 Retrieved Chunk (preview) | Score | Agent Answer | Revelent |
+|---|-------|---------------------------------|-------|--------------|----------|
+| 1 | Chí Phèo chửi ai? | "Chí Phèo vừa chém túi bụi vừa kêu làng thật to..." | 0.556 | Chí Phèo chửi đội Tảo, thằng lý Cường, và cả vợ hắn. | Có |
+| 2 | Thị Nở nấu gì... | "Hành thì nhà thị may lại còn Thị nấu bỏ vào cái rổ..." | 0.504 | Thị Nở nấu cháo hành cho Chí Phèo. | Có |
+| 3 | Chí Phèo ăn vạ ai? | "Có chúng nó sinh chuyện thì mới có dịp mà ăn..." | 0.491 | Chí Phèo ăn vạ đội Tảo. | Có |
+| 4 | Ai bắt cậu Vàng? | "Nhưng lão vội nắm lấy nó, ôm đầu nó, đập nhè nhẹ..." | 0.398 | Thằng Mục và thằng Xiên đã bắt cậu Vàng. | Có |
+| 5 | Bi kịch của Hộ... | "Nhưng Hộ chỉ sung sướng được ít lâu thôi. Sau cái..." | 0.413 | Bi kịch của Hộ là sự mâu thuẫn giữa ước mơ sáng tạo nghệ thuật và trách nhiệm nuôi gia đình, dẫn đến bất lực và khổ đau. | Có |
 
 **Bao nhiêu queries trả về chunk relevant trong top-3?** 3 / 5
 
